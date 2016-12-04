@@ -4,6 +4,9 @@
 	$parameter = $_REQUEST;
 	$type = $parameter["type"];
 	$data = $parameter["data"];
+        //$file = 'log.txt';
+        //file_put_contents($file, $type);
+        //file_put_contents($file, $data);
 	$op = new mainModel();
 	if($type=="getProducts"){
 		$op->getProducts();
