@@ -54,7 +54,7 @@ Marinated chicken, celery and onions in a bold black pepper sauce.
 			var rate_star;
 			var rate_comment;
 			var product_id;
-			product_id = "50007";
+			product_id = "20007";
 			$( "#rate_submit" ).click(function() { 
 			  $( "#setRate" ).css("display", "none");
 			  $( "#setRateThanks" ).css("display", "block");

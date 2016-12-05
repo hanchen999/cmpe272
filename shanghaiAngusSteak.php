@@ -56,7 +56,7 @@ Angus steak wok-seared with fresh asparagus, onions and mushrooms in a savory sa
 			var rate_star;
 			var rate_comment;
 			var product_id;
-			product_id = "50010";
+			product_id = "20010";
 			$( "#rate_submit" ).click(function() { 
 			  $( "#setRate" ).css("display", "none");
 			  $( "#setRateThanks" ).css("display", "block");

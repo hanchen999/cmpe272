@@ -56,7 +56,7 @@ A delicate combination of chicken, mushrooms and zucchini wok-tossed with a ligh
 			var rate_star;
 			var rate_comment;
 			var product_id;
-			product_id = "50006";
+			product_id = "20006";
 			$( "#rate_submit" ).click(function() { 
 			  $( "#setRate" ).css("display", "none");
 			  $( "#setRateThanks" ).css("display", "block");

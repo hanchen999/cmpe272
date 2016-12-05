@@ -54,7 +54,7 @@ Chicken breast, string beans and onions wok-tossed in a mild ginger soy sauce.
 			var rate_star;
 			var rate_comment;
 			var product_id;
-			product_id = "50003";
+			product_id = "20003";
 			$( "#rate_submit" ).click(function() { 
 			  $( "#setRate" ).css("display", "none");
 			  $( "#setRateThanks" ).css("display", "block");

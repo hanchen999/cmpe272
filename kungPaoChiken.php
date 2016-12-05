@@ -58,7 +58,7 @@ A Szechwan-inspired dish with chicken, peanuts and vegetables, finished with chi
 			var rate_star;
 			var rate_comment;
 			var product_id;
-			product_id = "50005";
+			product_id = "20005";
 			$( "#rate_submit" ).click(function() { 
 			  $( "#setRate" ).css("display", "none");
 			  $( "#setRateThanks" ).css("display", "block");

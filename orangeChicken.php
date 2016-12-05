@@ -56,7 +56,7 @@ Our signature dish. Crispy chicken wok-tossed in a sweet and spicy orange sauce.
 			var rate_star;
 			var rate_comment;
 			var product_id;
-			product_id = "50001";
+			product_id = "20001";
 			$( "#rate_submit" ).click(function() { 
 			  $( "#setRate" ).css("display", "none");
 			  $( "#setRateThanks" ).css("display", "block");

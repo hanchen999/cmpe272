@@ -54,7 +54,7 @@ Crispy, white-meat chicken, red bell peppers, onions and pineapples in a bright 
 			var rate_star;
 			var rate_comment;
 			var product_id;
-			product_id = "50004";
+			product_id = "20004";
 			$( "#rate_submit" ).click(function() { 
 			  $( "#setRate" ).css("display", "none");
 			  $( "#setRateThanks" ).css("display", "block");

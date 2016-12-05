@@ -54,7 +54,7 @@ All-white meat chicken, red and yellow bell peppers, onions and string beans in 
 			var rate_star;
 			var rate_comment;
 			var product_id;
-			product_id = "50002";
+			product_id = "20002";
 			$( "#rate_submit" ).click(function() { 
 			  $( "#setRate" ).css("display", "none");
 			  $( "#setRateThanks" ).css("display", "block");

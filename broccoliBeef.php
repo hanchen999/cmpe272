@@ -54,7 +54,7 @@ A classic favorite. Tender beef and fresh broccoli in a ginger soy sauce.
 			var rate_star;
 			var rate_comment;
 			var product_id;
-			product_id = "50009";
+			product_id = "20009";
 			$( "#rate_submit" ).click(function() { 
 			  $( "#setRate" ).css("display", "none");
 			  $( "#setRateThanks" ).css("display", "block");
