@@ -22,6 +22,12 @@ if (count($cookie) == 6) {
    $cookie = array_slice($cookie, 1);
 }
 setcookie('latest', serialize($cookie), time()+3600);
+
+require_once('DB_individual.php');
+	$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+	$product_id = "20010";
+	$SQL = "UPDATE market_product SET visited = visited + 1 WHERE product_id='$product_id'";
+	mysqli_query($conn, $SQL);
 ?>
 
 <!DOCTYPE html>
