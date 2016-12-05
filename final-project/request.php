@@ -2,6 +2,7 @@
 
 	require_once('mainModel.php');
 	$parameter = $_REQUEST;
+	$parameter = json_decode($parameter, true);
 	$type = $parameter["type"];
 	$data = $parameter["data"];
 	$op = new mainModel();
