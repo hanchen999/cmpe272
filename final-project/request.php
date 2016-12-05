@@ -1,10 +1,15 @@
 <?php
 
 	require_once('mainModel.php');
-	$parameter = $_REQUEST;
+	//$parameter = $_POST;
+       // exit('hello');
+        $parameter = file_get_contents("php://input");
+        //echo "hello\n";
+        //return('hello'. $parameter);
 	$parameter = json_decode($parameter, true);
 	$type = $parameter["type"];
 	$data = $parameter["data"];
+        //exit('hello word' . $type);
         //$file = 'log.txt';
         //file_put_contents($file, $type);
         //file_put_contents($file, $data);
@@ -12,8 +17,10 @@
 	if($type=="getProducts"){
 		$op->getProducts();
 	} else if($type=="setUser"){
-		$op->setUser($data);
+	       //exit($data["username"]);	
+               $op->setUser($data);
 	} else if($type=="setOrder"){
+                //exit($data["cost"]);
 		$op->setOrder($data);
 	} else if($type=="getOrder"){
 		$op->getOrder($data);
@@ -28,6 +35,4 @@
 	} else {
 		exit("request type error");
 	}
-
-
 ?>

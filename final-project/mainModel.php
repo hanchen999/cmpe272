@@ -28,12 +28,21 @@ class mainModel{
 	}
 	
 	public function setUser($data){
-		
+	      $username = $data["username"];
+              $password = $data["password"];
+              $email = $data["email"];
+              $phone = $data["phone"];
+              mysqli_query($this->conn,"INSERT INTO market_user(username,password,email,phone)
+				VALUES('$username','$password','$email','$phone')");	
 	}
 	
-	public function setOrder($data){
-		$SQL = "INSERT INTO market_order(username,product_ids,cost)
-				VALUES('$username','$product_ids','$price')";
+	public function setOrder($data) {
+                $username = $data["username"];
+                $product_ids = $data["product_ids"];
+                $quantity = $data["quantity"];
+                $price = $data["cost"];
+		$SQL = "INSERT INTO market_order(username,product_ids,quantity,cost)
+				VALUES('$username','$product_ids','$quantity','$price')";
 		mysqli_query($this->conn, $SQL);
 	}
 	
