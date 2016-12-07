@@ -13,7 +13,7 @@
    require_once('DB_individual.php');
    $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
    $number = 1;
-   $result = mysqli_query($conn, "SELECT * FROM cmpe272FinalProject.market_order WHERE username = '$username'");
+   $result = mysqli_query($conn, "SELECT * FROM market_order");
 		while($row = mysqli_fetch_assoc($result)){
 ?>
    <div class="container">
@@ -25,7 +25,7 @@
         <th>Product ID</th>
         <th>Product Name</th>
         <th>Product Quantity</th>
-        <th>Cost</th>th>
+        <th>Cost</th>
       </tr>
     </thead>
     <tbody>
