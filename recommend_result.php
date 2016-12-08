@@ -180,11 +180,11 @@
                      <?php
                      require_once('DB_individual.php');
                      $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
-    $result_rate = mysqli_query($conn, "SELECT a.product_id as product_id, a.price as price, a.picture as picture, a.visited as visited, AVG(b.rate) as rate, a.name as name, a.description as description FROM cmpe272FinalProject.market_product a LEFT JOIN cmpe272FinalProject.market_rate b ON a.product_id = b.product_id WHERE b.rate IS NOT NULL GROUP BY a.product_id, a.picture, a.visited, a.price, a.name, a.description order by rate limit 5");
+    $result_rate = mysqli_query($conn, "SELECT a.product_id as product_id, a.price as price, a.picture as picture, a.visited as visited, AVG(b.rate) as rate, a.name as name, a.description as description FROM market_product a LEFT JOIN market_rate b ON a.product_id = b.product_id WHERE b.rate IS NOT NULL GROUP BY a.product_id, a.picture, a.visited, a.price, a.name, a.description order by rate DESC limit 5");
 
-    $result_price = mysqli_query($conn, "SELECT a.product_id as product_id, a.price as price, a.picture as picture, a.visited as visited, AVG(b.rate) as rate, a.name as name, a.description as description FROM cmpe272FinalProject.market_product a LEFT JOIN cmpe272FinalProject.market_rate b ON a.product_id = b.product_id WHERE b.rate IS NOT NULL GROUP BY a.product_id, a.picture, a.visited, a.price, a.name, a.description order by price limit 5");
+    $result_price = mysqli_query($conn, "SELECT a.product_id as product_id, a.price as price, a.picture as picture, a.visited as visited, AVG(b.rate) as rate, a.name as name, a.description as description FROM market_product a LEFT JOIN market_rate b ON a.product_id = b.product_id WHERE b.rate IS NOT NULL GROUP BY a.product_id, a.picture, a.visited, a.price, a.name, a.description order by price DESC limit 5");
 
-    $result_visited = mysqli_query($conn, "SELECT a.product_id as product_id, a.price as price, a.picture as picture, a.visited as visited, AVG(b.rate) as rate, a.name as name, a.description as description FROM cmpe272FinalProject.market_product a LEFT JOIN cmpe272FinalProject.market_rate b ON a.product_id = b.product_id WHERE b.rate IS NOT NULL GROUP BY a.product_id, a.picture, a.visited, a.price, a.name, a.description order by visited limit 5");
+    $result_visited = mysqli_query($conn, "SELECT a.product_id as product_id, a.price as price, a.picture as picture, a.visited as visited, AVG(b.rate) as rate, a.name as name, a.description as description FROM market_product a LEFT JOIN market_rate b ON a.product_id = b.product_id WHERE b.rate IS NOT NULL GROUP BY a.product_id, a.picture, a.visited, a.price, a.name, a.description order by visited DESC limit 5");
     ?>
     <h1>Top Five Rated Product</h1>
                   <div class="ui five doubling cards">
