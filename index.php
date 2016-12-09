@@ -168,7 +168,12 @@ span.psw {
 <form action="curl_test.php">
     <input type="submit" value="User lists in different companies" />
 </form>
-
+<form action="recommend_result.php">
+    <input type="submit" value="Show Recommendation Result" />
+</form>
+<form action="show_order_detail.php">
+    <input type="submit" value="Show All Users Order Detail" />
+</form>
 </div>
 </body>
 </html>
